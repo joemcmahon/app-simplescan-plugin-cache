@@ -4,4 +4,4 @@ BEGIN {
 use_ok( 'App::SimpleScan::Plugin::Cache' );
 }
 
-diag( "Testing App::SimpleScan::Plugin::Cache $App::SimpleScan::Plugin::YahooLogin::VERSION" );
+diag( "Testing App::SimpleScan::Plugin::Cache $App::SimpleScan::Plugin::Cache::VERSION" );

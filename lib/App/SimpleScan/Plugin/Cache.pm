@@ -1,6 +1,6 @@
 package App::SimpleScan::Plugin::Cache;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use warnings;
 use strict;
@@ -16,12 +16,12 @@ sub pragmas {
 
 sub _do_nocache {
   my ($self, $rest) = @_;
-  $self->_stack_code("mech()->nocache();\n");
+  $self->stack_code("mech()->nocache();\n");
 }
     
 sub _do_cache {
   my ($self, $rest) = @_;
-  $self->_stack_code("mech()->cache();\n");
+  $self->stack_code("mech()->cache();\n");
 }
 
 
